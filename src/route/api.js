@@ -1,9 +1,9 @@
 const express=require("express");
 const router=express.Router();
-const UserController=require("../../controller/UserController");
-const AdminController=require("../../controller/AdminController");
-const middleware=require("../../MiddleWare/authVerify");
-const {userFindById} = require("../../Service/UserService");
+const UserController=require("../controller/UserController");
+const AdminController=require("../controller/AdminController");
+const middleware=require("../MiddleWare/authVerify");
+const {userFindById} = require("../git Service/UserService");
 
 
 router.post('/createUserProfile',UserController.createUserProfile)
